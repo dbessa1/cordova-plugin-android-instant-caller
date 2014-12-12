@@ -18,8 +18,8 @@ public class Call extends CordovaPlugin {
   public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
     if (ACTION_CALL_DIAL.equals(action)) {
       try {
-        String phonenumber = args.getString(0);
-        Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:"+phonenumber));
+        String phonenumber = args.getJSONObject(0).getString("number");
+        Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:"+Uri.encode(phonenumber)));
         this.cordova.getActivity().startActivity(intent);
         callbackContext.success();
         return true;

@@ -10,5 +10,5 @@ A cordova plugin for instant call in Android
 
 # Credits
 
-Inspired by no more existent [@munza](https://github.com/munza)
+Cloned from no more existent [@munza repository](https://github.com/munza)
 

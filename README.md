@@ -5,7 +5,7 @@ A cordova plugin for instant call in Android
 
 # Installation
 
-		cordova plugin add https://github.com/engbmsdev/cordova-plugin-android-instant-caller.git
+	cordova plugin add https://github.com/engbmsdev/cordova-plugin-android-instant-caller.git
 		
 
 # Credits
